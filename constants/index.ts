@@ -10,3 +10,52 @@ export const subLinks = [
   { title: "Customer support", id: 3, image: headphone, route: Routes.support },
   { title: "Need Help", id: 4, image: help, route: Routes.help },
 ];
+
+export const subCategories = [
+  { title: "Computer & Laptop", id: 0, linkTitle: "Computer&Laptop" },
+  { title: "Computer Accessories", id: 1, linkTitle: "ComputerAccessories" },
+  {
+    title: "SmartPhone",
+    id: 2,
+    image: headphone,
+    linkTitle: "phone",
+    subArray: [
+      { id: 0, title: "All" },
+      { id: 1, title: "IPhone" },
+      { id: 2, title: "Samsung" },
+      { id: 3, title: "Xiaomi" },
+      { id: 4, title: "Oppo" },
+      { id: 5, title: "Vivo" },
+      { id: 6, title: "Huawei" },
+      { id: 7, title: "Infinix" },
+      { id: 8, title: "Tecno" },
+    ],
+  },
+  { title: "Headphone", id: 3, image: help, linkTitle: "Headphone" },
+  {
+    title: "Mobile Accessories",
+    id: 4,
+    image: help,
+    linkTitle: "Mobile&Accessories",
+  },
+  { title: "Gaming Console", id: 5, image: help, linkTitle: "Gaming&Console" },
+  { title: "Camera Photo", id: 6, image: help, linkTitle: "Camera&Photo" },
+  {
+    title: "TV & Home Appliances",
+    id: 7,
+    image: help,
+    linkTitle: "TV&HomeAppliances",
+  },
+  {
+    title: "Watch & Accessories",
+    id: 8,
+    image: help,
+    linkTitle: "Watch&Accessories",
+  },
+  {
+    title: "GPS & Navigation",
+    id: 9,
+    image: help,
+    linkTitle: "GPS&Navigation",
+  },
+];
