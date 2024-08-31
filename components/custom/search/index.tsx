@@ -1,6 +1,7 @@
 "use client";
 import { useSearchQuery } from "@/hooks/useSearchQuery";
 import { type ChangeEvent } from "react";
+import { useDebouncedCallback } from "use-debounce";
 
 const Search = () => {
   const { search, updateURLSearchParams, setSearch } = useSearchQuery();
@@ -9,8 +10,13 @@ const Search = () => {
     updateURLSearchParams(searchQuery);
   };
 
+  const debouncedSearch = useDebouncedCallback(() => {
+    //  make api call
+  }, 1000);
+
   function handleChange(e: ChangeEvent<HTMLInputElement>) {
     setSearch(e.target.value);
+    debouncedSearch();
     updateURLSearchParams(e.target.value);
   }
   return (
