@@ -21,7 +21,7 @@ export const subCategories = [
     linkTitle: "phone",
     subArray: [
       { id: 0, title: "All" },
-      { id: 1, title: "IPhone" },
+      { id: 1, title: "Iphone" },
       { id: 2, title: "Samsung" },
       { id: 3, title: "Xiaomi" },
       { id: 4, title: "Oppo" },
@@ -59,3 +59,12 @@ export const subCategories = [
     linkTitle: "GPS&Navigation",
   },
 ];
+
+export const PhonesTitle = {
+  phone: "All Phones",
+  All: "All Featured Phones",
+  Iphone: "Featured IPhone Phones",
+  samsung: "Featured Samsung Phones",
+  Xiaomi: "Featured Xiaomi Phones",
+  Oppo: "Featured Oppo Phones",
+};
