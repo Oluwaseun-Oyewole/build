@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+// 1B6392
 const config = {
   darkMode: ["class"],
   content: [
@@ -31,6 +32,7 @@ const config = {
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+          700: "#1B6392",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
