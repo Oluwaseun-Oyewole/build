@@ -1,7 +1,7 @@
-import { useState } from "react";
 /* eslint-disable @typescript-eslint/strict-boolean-expressions */
 import { createUrl } from "@/lib/utils";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useState } from "react";
 
 function decodeParams(query: string | null | undefined) {
   return query ? decodeURIComponent(query) : "";
