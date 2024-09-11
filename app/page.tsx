@@ -6,7 +6,7 @@ import Wrapper from "@/components/custom/wrapper";
 export default function Home() {
   return (
     <Wrapper>
-      <div className="grid grid-flow-row grid-cols-[65%_33%] items-center justify-between gap-5 py-3">
+      <div className="grid grid-flow-row grid-cols-[65%_33%] items-center justify-between gap-5 py-5">
         <ItemsCarousel />
         <HeroRightSession />
       </div>

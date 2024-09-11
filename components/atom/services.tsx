@@ -7,7 +7,7 @@ const ShopifyServices = () => {
   return (
     <ul
       className={cn(
-        "flex h-[120px] w-full items-center justify-between rounded-lg border-[2px] border-gray-100 px-8",
+        "flex h-[100px] w-full items-center justify-between rounded-lg border-[2px] border-gray-100 px-8",
       )}>
       {services.map((service) => {
         return (

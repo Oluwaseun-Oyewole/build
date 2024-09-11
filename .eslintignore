@@ -6,3 +6,8 @@ node_modules
 next-env.d.ts
 next.config.ts
 yarn.lock
+fonts
+constants.ts
+tsconfig.json
+lib/utils.ts
+tailwind.config.ts

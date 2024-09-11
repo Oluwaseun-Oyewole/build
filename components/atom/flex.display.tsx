@@ -8,8 +8,8 @@ import Discount from "./discount";
 
 const HeroRightSession = () => {
   return (
-    <div className="flex h-[500px] w-full flex-col gap-5">
-      <div className="relative flex h-[250px] items-center gap-5 rounded-lg bg-black text-white">
+    <div className="flex h-[460px] w-full flex-col gap-5">
+      <div className="relative flex h-[260px] items-center gap-5 rounded-lg bg-black text-white">
         <div className="pl-5">
           <h2 className="text-lg uppercase text-yellow-400">Summer Sales</h2>
           <div className="py-2">
@@ -29,7 +29,7 @@ const HeroRightSession = () => {
           <Discount discountPercentage={29} />
         </div>
       </div>
-      <div className="flex h-[250px] items-center justify-center gap-2 rounded-lg bg-gray-100">
+      <div className="flex h-[260px] items-center justify-center gap-2 rounded-lg bg-gray-100">
         <Image src={Airpod} alt="" />
         <div>
           <h2 className="text-xl">Xiaomi</h2>

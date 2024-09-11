@@ -9,7 +9,7 @@ import Search from "../search";
 const Navigation = () => {
   return (
     <header className="flex h-[12vh] items-center justify-between bg-secondary-700 text-white">
-      <nav className="container grid w-full grid-flow-col grid-cols-[20%_60%_20%] items-center">
+      <nav className="container sticky top-0 grid w-full grid-flow-col grid-cols-[20%_60%_20%] items-center">
         <Link href="/">
           <div className="flex items-center gap-4">
             <Image alt="logo" src={icon} className="h-[30px] w-[30px]" />
