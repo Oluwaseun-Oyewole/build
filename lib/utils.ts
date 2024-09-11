@@ -15,3 +15,14 @@ export const createUrl = (
   return `${pathname}${queryString}`;
   // replace(`${pathname}?${params.toString()}`);
 };
+
+export function formatCurrency(
+  amount: number | string,
+  currencySymbol: string = "$",
+): string {
+  const roundedAmount = Math.round(Number(amount) * 100) / 100;
+  const [integerPart] = roundedAmount.toFixed(2).split(".");
+  const integerWithCommas = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  const formattedCurrency = `${currencySymbol}${integerWithCommas}`;
+  return formattedCurrency;
+}

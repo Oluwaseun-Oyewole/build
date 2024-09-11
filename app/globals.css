@@ -71,3 +71,13 @@
 .container{
   @apply mx-auto max-w-[1300px]
 }
+
+.slick-dots{
+  position: absolute !important;
+  bottom: 50px !important; 
+  right: 335px !important; 
+}
+
+.slick-dots li button:before {
+  font-size: 13px;
+}

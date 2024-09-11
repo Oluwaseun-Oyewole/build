@@ -27,12 +27,12 @@ function useClickOutside<T extends HTMLElement>(
     // };
 
     document.addEventListener("mousedown", handleClickOutside);
-    document.addEventListener("mouseenter", handleMouseEnter);
+    document.addEventListener("mouseover", handleMouseEnter);
     // document.addEventListener("mouseleave", handleMouseLeave, true);
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
-      document.removeEventListener("mouseenter", handleMouseEnter, true);
+      document.removeEventListener("mouseout", handleMouseEnter, true);
       //   document.removeEventListener("mouseleave", handleMouseLeave, true);
     };
   }, [ref, onClickOutside, onEnter, onLeave]);

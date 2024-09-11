@@ -33,8 +33,16 @@ const config = {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
           700: "#1B6392",
+          600: "#2DA5F3",
         },
-        gray: { _600: "#5F6C72", _50: "#F2F4F5" },
+        yellow: { _300: "#EFD33D" },
+        gray: {
+          _600: "#5F6C72",
+          _50: "#F2F4F5",
+          _300: "#ADB7BC",
+          _700: "#475156",
+        },
+        orange: { _700: "#FA8232" },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
