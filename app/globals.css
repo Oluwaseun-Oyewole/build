@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  background: transparent !important;
+  width: 0px !important;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -59,25 +64,12 @@
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
-
-.container{
-  @apply mx-auto max-w-[1300px]
-}
-
 .slick-dots{
   position: absolute !important;
   bottom: 50px !important; 
-  right: 335px !important; 
+  right: 330px !important; 
 }
 
 .slick-dots li button:before {
-  font-size: 13px;
+  font-size: 12px;
 }

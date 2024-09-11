@@ -20,7 +20,7 @@ const Search = () => {
     updateURLSearchParams(e.target.value);
   }
   return (
-    <div className="mx-auto w-full max-w-[80%]">
+    <div className="mx-auto w-full md:max-w-[80%]">
       <form action={onSubmit}>
         <input
           type="search"

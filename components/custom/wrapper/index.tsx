@@ -12,7 +12,7 @@ export default function Wrapper({
     <main>
       <Navigation />
       <SubLinks />
-      <div className="container">{children}</div>
+      {/* <div className="container">{children}</div> */}
       <Footer />
     </main>
   );

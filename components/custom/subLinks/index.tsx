@@ -2,6 +2,7 @@
 "use client";
 import { subLinks } from "@/constants";
 import { Routes } from "@/constants/routes";
+import { useGlobal } from "@/hooks/useGlobal";
 import { cn } from "@/lib/utils";
 import clsx from "clsx";
 import { motion } from "framer-motion";
@@ -9,12 +10,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowDown, IoMdClose } from "react-icons/io";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { MobileMenu } from "../nav/mobile";
 import Dropdown from "./dropdown";
 
 const SubLinks = () => {
   const pathname = usePathname();
+  const { open, toggle } = useGlobal();
+
   const [isDropdownVisible, setDropdownVisible] = useState(false);
   const [, setIsSubLinkVisible] = useState(false);
   // const getTitle = pathname.split("/");
@@ -47,7 +52,7 @@ const SubLinks = () => {
   }, []);
 
   return (
-    <div className={clsx("border-b-2 border-gray-100 py-4")}>
+    <div className={clsx("border-b-2 border-gray-100 py-2 md:py-4")}>
       <div className="container">
         <section className="flex items-center justify-between">
           <div className="flex items-center">
@@ -84,7 +89,7 @@ const SubLinks = () => {
                     whileHover={{ background: "#FA8232", color: "#fff" }}
                     key={link.id}
                     className={cn(
-                      "flex items-center gap-2 rounded-md px-5 py-4 text-sm font-light text-gray-_600 hover:text-black",
+                      "hidden items-center gap-2 rounded-md px-5 py-4 text-sm font-light text-gray-_600 hover:text-black md:flex",
                       {
                         "font-medium text-black": link.route === pathname,
                       },
@@ -103,9 +108,27 @@ const SubLinks = () => {
             </motion.ul>
           </div>
 
-          <div />
+          <div className="md:hidden">
+            {!open ? (
+              <RxHamburgerMenu
+                size={20}
+                onClick={() => {
+                  toggle(true);
+                }}
+              />
+            ) : (
+              <IoMdClose
+                size={20}
+                role="button"
+                onClick={() => {
+                  toggle(false);
+                }}
+              />
+            )}
+          </div>
         </section>
       </div>
+      <MobileMenu />
     </div>
   );
 };

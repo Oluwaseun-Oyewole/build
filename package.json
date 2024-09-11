@@ -20,6 +20,7 @@
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "immer": "^10.1.1",
     "lucide-react": "^0.436.0",
     "next": "14.2.6",
     "react": "^18",
@@ -28,7 +29,8 @@
     "remove": "^0.1.5",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
-    "use-debounce": "^10.0.3"
+    "use-debounce": "^10.0.3",
+    "zustand": "^4.5.5"
   },
   "devDependencies": {
     "@testing-library/react": "^16.0.0",

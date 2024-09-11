@@ -1,6 +1,7 @@
 import HeroRightSession from "@/components/atom/flex.display";
 import ShopifyServices from "@/components/atom/services";
 import ItemsCarousel from "@/components/custom/carousel";
+import Deals from "@/components/custom/deals";
 import Wrapper from "@/components/custom/wrapper";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         <HeroRightSession />
       </div>
       <ShopifyServices />
+      <Deals />
     </Wrapper>
   );
 }

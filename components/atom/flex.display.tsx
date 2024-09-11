@@ -8,7 +8,7 @@ import Discount from "./discount";
 
 const HeroRightSession = () => {
   return (
-    <div className="flex h-[460px] w-full flex-col gap-5">
+    <div className="flex h-[500px] w-full flex-col gap-5">
       <div className="relative flex h-[260px] items-center gap-5 rounded-lg bg-black text-white">
         <div className="pl-5">
           <h2 className="text-lg uppercase text-yellow-400">Summer Sales</h2>

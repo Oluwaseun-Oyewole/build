@@ -8,16 +8,18 @@ import Search from "../search";
 
 const Navigation = () => {
   return (
-    <header className="flex h-[12vh] items-center justify-between bg-secondary-700 text-white">
-      <nav className="container sticky top-0 grid w-full grid-flow-col grid-cols-[20%_60%_20%] items-center">
+    <header className="sticky left-0 top-0 z-10 flex h-[12vh] items-center justify-between bg-secondary-700 text-white">
+      <nav className="container grid w-full grid-flow-col items-center md:grid-cols-[20%_60%_20%]">
         <Link href="/">
           <div className="flex items-center gap-4">
-            <Image alt="logo" src={icon} className="h-[30px] w-[30px]" />
+            <Image alt="logo" src={icon} className="hidden h-[30px] w-[30px]" />
             <h1>Shopify</h1>
           </div>
         </Link>
-        <Search />
-        <div className="flex items-center justify-end gap-4">
+        <div>
+          <Search />
+        </div>
+        <div className="hidden items-center justify-end gap-4 md:flex">
           <Image alt="cart" src={cart} className="h-[30px] w-[30px]" />
           <Image alt="love" src={love} className="h-[30px] w-[30px]" />
           <Image alt="user" src={user} className="h-[30px] w-[30px]" />

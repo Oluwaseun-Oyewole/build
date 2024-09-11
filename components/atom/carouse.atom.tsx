@@ -21,7 +21,7 @@ const SliderComponent = ({
   amount: number;
 }) => {
   return (
-    <div className="relative flex h-[460px] items-center justify-between rounded-lg bg-gray-100 px-10">
+    <div className="relative flex h-[500px] items-center justify-between rounded-lg bg-gray-100 px-10">
       <div className="basis-1/2">
         <div className="flex items-center gap-2">
           <span className="block h-[2px] w-[15px] bg-secondary-600" />
@@ -45,7 +45,7 @@ const SliderComponent = ({
         <PriceTag amount={amount} />
       </div>
       <div className="basis-1/2">
-        <Image src={imagePath} alt="item" priority className="h-[400px]" />
+        <Image src={imagePath} alt="item" priority className="h-[370px]" />
       </div>
     </div>
   );
