@@ -21,17 +21,17 @@ const SliderComponent = ({
   amount: number;
 }) => {
   return (
-    <div className="relative flex h-[500px] items-center justify-between rounded-lg bg-gray-100 px-10">
-      <div className="basis-1/2">
+    <div className="relative flex flex-col items-center justify-between rounded-lg bg-gray-100 px-10 py-10 md:h-[500px] md:flex-row md:py-0">
+      <div className="order-2 basis-1/2">
         <div className="flex items-center gap-2">
           <span className="block h-[2px] w-[15px] bg-secondary-600" />
           <h3 className="text-secondary-600">{title}</h3>
         </div>
-        <div className="flex flex-col gap-5 pt-2">
-          <h2 className="text-5xl">{heading}</h2>
+        <div className="flex flex-col gap-3 pt-2 md:gap-5">
+          <h2 className="text-2xl md:text-5xl">{heading}</h2>
           <h2
             className={clsx(
-              "pr-14 text-base text-gray-700",
+              "text-sm text-gray-700 md:pr-14 md:text-base",
               grotesk.className,
             )}>
             {description}
@@ -44,8 +44,13 @@ const SliderComponent = ({
       <div className="absolute right-16 top-10">
         <PriceTag amount={amount} />
       </div>
-      <div className="basis-1/2">
-        <Image src={imagePath} alt="item" priority className="h-[370px]" />
+      <div className="order-1 basis-1/2">
+        <Image
+          src={imagePath}
+          alt="item"
+          priority
+          className="h-[200px] md:h-[370px]"
+        />
       </div>
     </div>
   );

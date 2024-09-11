@@ -8,13 +8,13 @@ import Discount from "./discount";
 
 const HeroRightSession = () => {
   return (
-    <div className="flex h-[500px] w-full flex-col gap-5">
-      <div className="relative flex h-[260px] items-center gap-5 rounded-lg bg-black text-white">
+    <div className="flex h-[500px] w-full flex-col gap-5 md:flex-row xl:flex-col">
+      <div className="relative flex h-[260px] w-full items-center gap-5 overflow-hidden rounded-lg bg-black text-white">
         <div className="pl-5">
-          <h2 className="text-lg uppercase text-yellow-400">Summer Sales</h2>
+          <h2 className="uppercase text-yellow-400 md:text-lg">Summer Sales</h2>
           <div className="py-2">
-            <h2 className="text-xl">New Google</h2>
-            <h2 className="text-xl">Pixel 6 Pro</h2>
+            <h2 className="md:text-xl">New Google</h2>
+            <h2 className="md:text-xl">Pixel 6 Pro</h2>
           </div>
           <Button variant="secondary" size="lg">
             shop now <IoMdArrowForward size={20} />
@@ -23,17 +23,17 @@ const HeroRightSession = () => {
         <Image
           src={SummerSalesImage}
           alt=""
-          className="absolute bottom-0 right-0 h-[160px]"
+          className="absolute -right-7 bottom-0 h-[140px] md:right-0 md:h-[160px]"
         />
         <div className="absolute right-[50px] top-[70px]">
           <Discount discountPercentage={29} />
         </div>
       </div>
-      <div className="flex h-[260px] items-center justify-center gap-2 rounded-lg bg-gray-100">
+      <div className="flex h-[260px] w-full items-center justify-around gap-2 overflow-hidden rounded-lg bg-gray-100 xl:justify-center">
         <Image src={Airpod} alt="" />
         <div>
-          <h2 className="text-xl">Xiaomi</h2>
-          <h2 className="text-xl">Flipbuds Prop</h2>
+          <h2 className="md:text-xl">Xiaomi</h2>
+          <h2 className="md:text-xl">Flipbuds Prop</h2>
           <h3 className="py-2 text-secondary-600">{formatCurrency(300)}</h3>
           <Button variant="secondary" size="lg">
             shop now <IoMdArrowForward size={20} />

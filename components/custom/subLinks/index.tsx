@@ -52,7 +52,10 @@ const SubLinks = () => {
   }, []);
 
   return (
-    <div className={clsx("border-b-2 border-gray-100 py-2 md:py-4")}>
+    <div
+      className={clsx(
+        "sticky left-0 top-0 border-b-2 border-gray-100 py-2 lg:py-4",
+      )}>
       <div className="container">
         <section className="flex items-center justify-between">
           <div className="flex items-center">
@@ -89,7 +92,7 @@ const SubLinks = () => {
                     whileHover={{ background: "#FA8232", color: "#fff" }}
                     key={link.id}
                     className={cn(
-                      "hidden items-center gap-2 rounded-md px-5 py-4 text-sm font-light text-gray-_600 hover:text-black md:flex",
+                      "hidden items-center gap-2 rounded-md px-5 py-4 text-sm font-light text-gray-_600 hover:text-black lg:flex",
                       {
                         "font-medium text-black": link.route === pathname,
                       },
@@ -108,7 +111,7 @@ const SubLinks = () => {
             </motion.ul>
           </div>
 
-          <div className="md:hidden">
+          <div className="lg:hidden">
             {!open ? (
               <RxHamburgerMenu
                 size={20}

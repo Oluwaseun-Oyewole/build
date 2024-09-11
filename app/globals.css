@@ -66,10 +66,12 @@
 
 .slick-dots{
   position: absolute !important;
+  z-index: 10000 !important;
   bottom: 50px !important; 
   right: 330px !important; 
 }
 
 .slick-dots li button:before {
   font-size: 12px;
+
 }
