@@ -15,7 +15,7 @@ const config = {
       center: true,
       padding: "1.5rem",
       screens: {
-        "2xl": "1400px",
+        "2xl": "1350px",
       },
     },
     extend: {
@@ -35,6 +35,7 @@ const config = {
           700: "#1B6392",
           600: "#2DA5F3",
         },
+        warning: { 500: "#EBC80C" },
         yellow: { _300: "#EFD33D" },
         gray: {
           _600: "#5F6C72",

@@ -21,8 +21,8 @@ const SliderComponent = ({
   amount: number;
 }) => {
   return (
-    <div className="relative flex flex-col items-center justify-between rounded-lg bg-gray-100 px-10 py-10 md:h-[500px] md:flex-row md:py-0">
-      <div className="order-2 basis-1/2">
+    <div className="relative flex flex-col items-center justify-between rounded-lg bg-gray-100 px-10 py-16 md:h-[500px] md:flex-row md:py-0">
+      <div className="order-2 basis-1/2 lg:order-1">
         <div className="flex items-center gap-2">
           <span className="block h-[2px] w-[15px] bg-secondary-600" />
           <h3 className="text-secondary-600">{title}</h3>
@@ -44,7 +44,7 @@ const SliderComponent = ({
       <div className="absolute right-16 top-10">
         <PriceTag amount={amount} />
       </div>
-      <div className="order-1 basis-1/2">
+      <div className="order-1 basis-1/2 lg:order-2">
         <Image
           src={imagePath}
           alt="item"

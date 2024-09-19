@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+*{padding: 0; margin: 0; box-sizing: border-box;}
 ::-webkit-scrollbar {
   background: transparent !important;
   width: 0px !important;
@@ -64,13 +65,22 @@
   }
 }
 
-.slick-dots{
+/* @media screen and (max-width: 800px) {
+ .slick-dots{
   position: absolute !important;
-  z-index: 10000 !important;
+  bottom: 15px !important; 
+  left: 150px !important; 
+}
+} */
+
+@media screen and (min-width: 800px) {
+  .slick-dots{
+  position: absolute !important;
   bottom: 50px !important; 
-  right: 330px !important; 
+  right: 350px !important; 
 }
 
+}
 .slick-dots li button:before {
   font-size: 12px;
 

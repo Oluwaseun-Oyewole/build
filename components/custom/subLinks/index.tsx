@@ -52,10 +52,7 @@ const SubLinks = () => {
   }, []);
 
   return (
-    <div
-      className={clsx(
-        "sticky left-0 top-0 border-b-2 border-gray-100 py-2 lg:py-4",
-      )}>
+    <div className={clsx("border-b-2 border-gray-100 bg-white py-2 lg:py-5")}>
       <div className="container">
         <section className="flex items-center justify-between">
           <div className="flex items-center">

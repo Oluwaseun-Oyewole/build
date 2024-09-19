@@ -1,3 +1,5 @@
+import Ads from "@/components/atom/ads";
+import PreNavigation from "@/components/atom/pre-nav";
 import { type ReactNode } from "react";
 import Footer from "../footer";
 import Navigation from "../nav";
@@ -10,9 +12,14 @@ export default function Wrapper({
 }) {
   return (
     <main>
-      <Navigation />
-      <SubLinks />
-      <div className="container">{children}</div>
+      <div className="sticky left-0 top-0 z-10">
+        <Ads />
+        <PreNavigation />
+        <Navigation />
+        <SubLinks />
+      </div>
+      {/* <SubLinks /> */}
+      <div>{children}</div>
       <Footer />
     </main>
   );

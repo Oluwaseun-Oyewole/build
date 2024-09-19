@@ -8,7 +8,7 @@ import Search from "../search";
 
 const Navigation = () => {
   return (
-    <header className="sticky left-0 top-0 z-10 flex h-[12vh] items-center justify-between bg-secondary-700 text-white">
+    <header className="flex flex-col items-center justify-between bg-secondary-700 py-4 text-white">
       <nav className="container grid w-full grid-flow-col items-center md:grid-cols-[20%_60%_20%]">
         <Link href="/">
           <div className="flex items-center gap-4">

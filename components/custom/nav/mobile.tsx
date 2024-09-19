@@ -54,7 +54,7 @@ export const MobileMenu = () => {
           variants={variants}
           exit="exit"
           className={classNames(
-            `container fixed right-0 mt-2 flex h-[89vh] w-full flex-col overflow-hidden bg-secondary-700 shadow-md lg:hidden`,
+            `container fixed right-0 z-[100000] mt-2 flex h-[89vh] w-full flex-col overflow-hidden bg-secondary-700 shadow-md lg:hidden`,
             grotesk.className,
           )}>
           <div className="flex items-center justify-end gap-4 py-5 md:hidden">
@@ -74,7 +74,7 @@ export const MobileMenu = () => {
                   whileHover={{ background: "#FA8232", color: "#fff" }}
                   key={link.id}
                   className={cn(
-                    "flex items-center gap-2 rounded-md py-2 text-lg text-gray-100 hover:text-black md:hidden",
+                    "flex items-center gap-2 rounded-md py-2 text-lg text-gray-100 hover:text-black lg:hidden",
                     {
                       "font-medium text-orange-300": link.route === pathname,
                     },

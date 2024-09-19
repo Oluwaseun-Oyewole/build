@@ -76,11 +76,13 @@ const Dropdown = ({
                         <Link href={`/categories/${link.linkTitle}`}>
                           {link.title}
                         </Link>
-                        {!isSubDropdownVisible ? (
-                          <IoChevronForwardSharp size={15} onClick={enter} />
-                        ) : (
-                          <IoIosArrowDown size={15} onClick={leave} />
-                        )}
+                        <div className="hidden lg:block">
+                          {!isSubDropdownVisible ? (
+                            <IoChevronForwardSharp size={15} onClick={enter} />
+                          ) : (
+                            <IoIosArrowDown size={15} onClick={leave} />
+                          )}
+                        </div>
                       </div>
                     ) : (
                       <Link href={`/categories/${link.linkTitle}`}>
@@ -93,7 +95,7 @@ const Dropdown = ({
                     <>
                       {link.subArray && (
                         <ul
-                          className="absolute left-[260px] top-0 w-[750px] list-none rounded-md bg-white py-4 text-black"
+                          className="absolute left-[260px] top-0 hidden w-[750px] list-none rounded-md bg-white py-4 text-black lg:block"
                           style={{
                             boxShadow: "0px 4px 8px rgba(0,0,0,0.2)",
                           }}

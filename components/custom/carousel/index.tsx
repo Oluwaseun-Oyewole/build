@@ -15,7 +15,7 @@ export default function ItemsCarousel() {
   };
 
   return (
-    <div>
+    <div className="">
       <Slider {...settings}>
         <SliderComponent
           title="THE BEST PLACE TO PLAY"
