@@ -18,7 +18,7 @@ const Navigation = () => {
           </div>
         </Link>
         <div>
-          <Suspense fallback={<p>Loading....</p>}>
+          <Suspense fallback={<p>..</p>}>
             <Search />
           </Suspense>
         </div>
