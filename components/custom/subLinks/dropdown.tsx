@@ -1,9 +1,7 @@
 /* eslint-disable @typescript-eslint/strict-boolean-expressions */
 import { subCategories } from "@/constants";
 import { cn } from "@/lib/utils";
-import ps3 from "@/public/assets/images/svg/game.svg";
 import { AnimatePresence, motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState, type Dispatch, type SetStateAction } from "react";
 import { IoIosArrowDown } from "react-icons/io";
@@ -91,7 +89,7 @@ const Dropdown = ({
                     )}
                   </>
 
-                  {isSubDropdownVisible && (
+                  {/* {isSubDropdownVisible && (
                     <>
                       {link.subArray && (
                         <ul
@@ -121,11 +119,11 @@ const Dropdown = ({
                               })}
                             </ul>
                             <div className="flex flex-col gap-5">
-                              {/* {
+                              {
                                         PhonesTitle[
                                           getTitleEnum as keyof typeof PhonesTitle
                                         ]
-                                      } */}
+                                      }
                               <div className="flex items-center">
                                 <Image alt="game" src={ps3} />
                                 <div>
@@ -156,7 +154,7 @@ const Dropdown = ({
                         </ul>
                       )}
                     </>
-                  )}
+                  )} */}
                 </motion.li>
               );
             })}
