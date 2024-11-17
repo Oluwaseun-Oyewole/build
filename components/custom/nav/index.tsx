@@ -4,6 +4,7 @@ import love from "@/public/assets/images/svg/love.svg";
 import user from "@/public/assets/images/svg/user.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense } from "react";
 import Search from "../search";
 
 const Navigation = () => {
@@ -17,7 +18,9 @@ const Navigation = () => {
           </div>
         </Link>
         <div>
-          <Search />
+          <Suspense fallback={<p>Loading....</p>}>
+            <Search />
+          </Suspense>
         </div>
         <div className="hidden items-center justify-end gap-4 md:flex">
           <Image alt="cart" src={cart} className="h-[30px] w-[30px]" />
